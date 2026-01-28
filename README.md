@@ -35,7 +35,7 @@ graph LR
 ```
     
     %% Security Controls
-
+```bash
 🔒 Security Controls Implemented
 1. Perimeter Defense
 Least Privilege Firewalling: AWS Security Group denies all non-essential traffic.
@@ -63,6 +63,7 @@ docker run -d -p 8080:80 --name portfolio-container my-portfolio:v1
 Bash
 curl localhost:8080
  Output: Returns the secure HTML portfolio
+```
 
 
 👨‍💻 About Me
