@@ -11,7 +11,6 @@ This project demonstrates a **secure-by-design** web server deployment on AWS. U
 
 ---
 
-
 ## 🏗️ Architecture Design
 The system uses a **Defense-in-Depth** strategy, ensuring that even if one layer fails, the core asset remains protected.
 
@@ -37,9 +36,7 @@ graph LR
     %% Security Controls
     classDef security fill:#f00,color:white,stroke-width:2px;
     SSH[SSH Access] -- Port 22 (My IP Only) --> SG
-    style SSH fill:#f9f,stroke:#333,stroke-width:4px
-
-
+    style SSH fill:#f9f,stroke:#333,stroke-width:4px` ``` `
 
 🔒 Security Controls Implemented
 1. Perimeter Defense
