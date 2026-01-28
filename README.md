@@ -47,25 +47,22 @@ Immutable Infrastructure: The application runs inside a Docker Container, ensuri
 
 Minimalist OS: Uses nginx:alpine (a 5MB Linux image) to drastically reduce the attack surface compared to a full OS.
 
-# 🐳 How to Deploy (Docker)
+🐳 How to Deploy (Docker)
 Prerequisites
 Docker Installed (sudo apt install docker.io)
 
-#1. Build the Image
+1. Build the Image
 Bash
-Build the container from the Dockerfile
+ Build the container from the Dockerfile
 docker build -t my-portfolio:v1 .
-
-#2. Run the Container
+2. Run the Container
 Bash
-Run in background, mapping Port 8080 to Container Port 80
+ Run in background, mapping Port 8080 to Container Port 80
 docker run -d -p 8080:80 --name portfolio-container my-portfolio:v1
-
-#3. Verify Deployment
+3. Verify Deployment
 Bash
 curl localhost:8080
  Output: Returns the secure HTML portfolio
-
 
 
 👨‍💻 About Me
