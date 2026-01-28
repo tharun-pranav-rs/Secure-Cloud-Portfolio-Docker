@@ -34,9 +34,6 @@ graph LR
     end
     
     %% Security Controls
-    classDef security fill:#f00,color:white,stroke-width:2px;
-    SSH[SSH Access] -- Port 22 (My IP Only) --> SG
-    style SSH fill:#f9f,stroke:#333,stroke-width:4px` ``` `
 
 🔒 Security Controls Implemented
 1. Perimeter Defense
@@ -71,3 +68,6 @@ Tharun Pranav RS | Aeronautical Engineer | CompTIA Security+ Certified
 Transitioning from Aeronautical Engineering to Cybersecurity, I build cloud systems with the same rigor used in flight safety protocols.
 
 <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+    classDef security fill:#f00,color:white,stroke-width:2px;
+    SSH[SSH Access] -- Port 22 (My IP Only) --> SG
+    style SSH fill:#f9f,stroke:#333,stroke-width:4px
