@@ -41,6 +41,8 @@ graph LR
     SSH[SSH Access] -- Port 22 (My IP Only) --> SG
     style SSH fill:#f9f,stroke:#333,stroke-width:4px
 
+
+
 🔒 Security Controls Implemented
 1. Perimeter Defense
 Least Privilege Firewalling: AWS Security Group denies all non-essential traffic.
