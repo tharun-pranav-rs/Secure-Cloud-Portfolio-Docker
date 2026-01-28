@@ -11,8 +11,6 @@ This project demonstrates a **secure-by-design** web server deployment on AWS. U
 
 ---
 
-## 🏗️ Architecture Design
-The system uses a **Defense-in-Depth** strategy, ensuring that even if one layer fails, the core asset remains protected.
 
 ## 🏗️ Architecture Design
 The system uses a **Defense-in-Depth** strategy, ensuring that even if one layer fails, the core asset remains protected.
