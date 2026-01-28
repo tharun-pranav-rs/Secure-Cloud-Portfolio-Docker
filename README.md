@@ -36,16 +36,20 @@ graph LR
     
     %% Security Controls
 ```bash
-🔒 Security Controls Implemented
-1. Perimeter Defense
-Least Privilege Firewalling: AWS Security Group denies all non-essential traffic.
+## 🔒 Security Controls Implemented
 
-SSH Hardening: SSH (Port 22) is restricted strictly to a Single Static IP (/32 CIDR).
+### 1. Perimeter Defense
+* **Least Privilege Firewalling:** AWS Security Group denies all non-essential traffic.
+* **SSH Hardening:** SSH (Port 22) is restricted strictly to a **Single Static IP (`/32` CIDR)**.
 
-2. System Integrity (Containerization)
-Immutable Infrastructure: The application runs inside a Docker Container, ensuring the environment is identical across development and production.
+### 2. System Integrity (Containerization)
+* **Immutable Infrastructure:** The application runs inside a **Docker Container**, ensuring the environment is identical across development and production.
+* **Minimalist OS:** Uses `nginx:alpine` (a 5MB Linux image) to drastically reduce the attack surface compared to a full OS.
 
-Minimalist OS: Uses nginx:alpine (a 5MB Linux image) to drastically reduce the attack surface compared to a full OS.
+### 3. Host Intrusion Prevention (Defense Pipeline)
+* **Automated Hardening:** The `scripts/server_defense.sh` script automates the deployment of **UFW** and **Fail2Ban** to lock down the host OS.
+* **Brute-Force Protection:** Fail2Ban is configured to ban IPs immediately after **3 failed SSH login attempts**.
+* **Malware Defense:** Includes automated setups for **ClamAV** to perform daily file system scans.
 
 🐳 How to Deploy (Docker)
 Prerequisites
