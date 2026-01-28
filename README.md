@@ -32,6 +32,7 @@ graph LR
             Nginx --> HTML[Portfolio Site]
         end
     end
+```
     
     %% Security Controls
 
