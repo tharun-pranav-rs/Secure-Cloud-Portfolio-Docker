@@ -51,27 +51,25 @@ Minimalist OS: Uses nginx:alpine (a 5MB Linux image) to drastically reduce the a
 Prerequisites
 Docker Installed (sudo apt install docker.io)
 
-1. Build the Image
+#1. Build the Image
 Bash
 Build the container from the Dockerfile
 docker build -t my-portfolio:v1 .
 
-3. Run the Container
+#2. Run the Container
 Bash
 Run in background, mapping Port 8080 to Container Port 80
 docker run -d -p 8080:80 --name portfolio-container my-portfolio:v1
 
-3. Verify Deployment
+#3. Verify Deployment
 Bash
 curl localhost:8080
  Output: Returns the secure HTML portfolio
+
+
 
 👨‍💻 About Me
 Tharun Pranav RS | Aeronautical Engineer | CompTIA Security+ Certified
 
 Transitioning from Aeronautical Engineering to Cybersecurity, I build cloud systems with the same rigor used in flight safety protocols.
 
-<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-    classDef security fill:#f00,color:white,stroke-width:2px;
-    SSH[SSH Access] -- Port 22 (My IP Only) --> SG
-    style SSH fill:#f9f,stroke:#333,stroke-width:4px
